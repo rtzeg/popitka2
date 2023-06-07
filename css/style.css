@@ -181,9 +181,102 @@
     color: black;
 }
 /* конец sec 1 */
+/* sec 2 */
 
 
+img {
+    max-width: 100%;
+}
 
+.bg {
+    background: #515151;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    max-width: 530px;
+    padding-top: 210px;
+    margin-left: 315px;
+}
+
+.text h3 {
+    background: linear-gradient(103.63deg, #FF4460 1.93%, #AD00FF 54.03%, #31CEFF 92.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.text h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 50px;
+    color: #fff;
+}
+
+.text p {
+    padding-top: 65px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#man {
+    position: absolute;
+    left: 670px;
+    top: 37px;
+    opacity: 0;
+    animation: man 3s linear;
+}
+
+#iron_man {
+    position: absolute;
+    left: 639px;
+    top: 174px; 
+    opacity: 1;
+    animation: iron_man 3s ease-in;
+}
+
+@keyframes man {
+    from {
+        left: -100%;
+        opacity: 1;
+    }
+
+    25% {
+        left: 670px;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes iron_man {
+    0% {
+        opacity: 0;
+    }   
+    25% {
+        opacity: 0;
+    }   
+
+    100% {
+        opacity: 1;
+    }
+}
+/* конец sec 2 */
 /* sec3 */
 .section3 {
     width: 100%;
